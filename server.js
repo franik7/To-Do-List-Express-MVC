@@ -5,7 +5,7 @@ const homeRoutes = require('./routes/home')
 const todoRoutes = require('./routes/todos')
 
 require('dotenv').config({path: './etc/secrets/.env'})
-
+require('dotenv').config({path: './.env'})
 
 connectDB()
 
