@@ -7,6 +7,7 @@ const todoRoutes = require('./routes/todos')
 require('dotenv').config({path: './etc/secrets/.env'})
 require('dotenv').config({path: './.env'})
 
+
 connectDB()
 
 app.set('view engine', 'ejs')
