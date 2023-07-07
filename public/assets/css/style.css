@@ -1,0 +1,143 @@
+/* Global Styles */
+
+
+.completed{
+  text-decoration: line-through;
+  color: red;
+  font-size: 22px;
+}
+.not{
+  font-size: 22px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todoItem {
+  position: relative;
+  padding-left: 20px;
+}
+
+.todoItem:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #007bff;
+}
+
+.completed:before {
+  background-color: #28a745;
+}
+
+.not:before {
+  background-color: #dc3545;
+}
+
+.todoItem span {
+  margin-left: 10px;
+}
+
+.todoItem .del {
+  color: #333;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button.reset {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Header Section */
+
+#header {
+  background-color: #fff;
+  padding: 40px 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+
+body {
+  background-color: #f2f2f2;
+}
