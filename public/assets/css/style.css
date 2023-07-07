@@ -99,8 +99,11 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 300px;
+  width: 100%; /* Adjust the width to 100% */
+  max-width: 300px; /* Set a maximum width if needed */
+  box-sizing: border-box; /* Include padding and border in the total width */
 }
+
 
 input[type="submit"] {
   background-color: #007bff;
